@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple calculator</title>
+    <link rel="stylesheet" href="cal.css">
+</head>
+
+<body>
+    <div class="cal-wrapper">
+        <div class="calcultor">
+            <form action="" name="calculator">
+                <div class="calculator-screen">
+                    <input type="text" id="result_calculator" name="result">
+                </div>
+                <div class="calculator-container">
+                    <div class="row">
+                        <div class="button-calculator">
+                            <input type="button" value="AC" onclick="calculator.result.value=''">
+                        </div>
+                        <div class="button-calculator">
+                            <input type="button" value="p" onclick="calculator.result.value+='**'">
+                        </div>
+                        <div class="button-calculator">
+                            <input type="button" value="%" onclick="calculator.result.value+='%'">
+                        </div>
+                        <div class="button-calculator">
+                            <input type="button" value="/" onclick="calculator.result.value+='/'">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="button-calculator">
+                            <input type="button" value="7" onclick="calculator.result.value+='7'">
+                        </div>
+                        <div class="button-calculator">
+                            <input type="button" value="8" onclick="calculator.result.value+='8'">
+                        </div>
+                        <div class="button-calculator">
+                            <input type="button" value="9" onclick="calculator.result.value+='9'">
+                        </div>
+                        <div class="button-calculator">
+                            <input type="button" value="*" onclick="calculator.result.value+='*'">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="button-calculator">
+                            <input type="button" value="4" onclick="calculator.result.value+='4'">
+                        </div>
+                        <div class="button-calculator">
+                            <input type="button" value="5" onclick="calculator.result.value+='5'">
+                        </div>
+                        <div class="button-calculator">
+                            <input type="button" value="6" onclick="calculator.result.value+='6'">
+                        </div>
+                        <div class="button-calculator">
+                            <input type="button" value="-" onclick="calculator.result.value+='-'">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="button-calculator">
+                            <input type="button" value="1" onclick="calculator.result.value+='1'">
+                        </div>
+                        <div class="button-calculator">
+                            <input type="button" value="2" onclick="calculator.result.value+='2'">
+                        </div>
+                        <div class="button-calculator">
+                            <input type="button" value="3" onclick="calculator.result.value+='3'">
+                        </div>
+                        <div class="button-calculator">
+                            <input type="button" value="+" onclick="calculator.result.value+='+'">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="button-calculator">
+                            <input type="button" value="0" onclick="calculator.result.value+='0'">
+                        </div>
+                        <div class="button-calculator">
+                            <input type="button" value="." onclick="calculator.result.value+='.'">
+                        </div>
+                        <div class="button-calculator equal">
+                            <input type="button" value="=" onclick="calculator.result.value=eval(calculator.result.value)">
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
